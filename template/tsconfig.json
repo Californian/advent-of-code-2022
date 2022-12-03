@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "target": "es6",
+    "esModuleInterop": true,
+    "outDir": "build/",
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*"],
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true,
+    "compilerOptions": {
+      "rootDir": "."
+    },
+    "esm": true
+  }
+}

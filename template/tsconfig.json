@@ -4,16 +4,17 @@
     "allowJs": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
-    "target": "es6",
+    "target": "es2022",
     "esModuleInterop": true,
     "outDir": "build/",
     "baseUrl": ".",
     "paths": {
-      "src/*": ["*"]
+      "src/*": ["*"],
+      "types/*": ["*"]
     }
   },
   "exclude": ["node_modules"],
-  "include": ["./src/**/*"],
+  "include": ["./src/**/*.ts", "./__tests__/*.ts", "./types/**.ts"],
   "ts-node": {
     "transpileOnly": true,
     "files": true,

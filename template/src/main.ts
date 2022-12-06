@@ -1,11 +1,12 @@
 import { program } from "commander";
-import { promises as fs } from "fs";
-import { } from "src";
+import { parseInput } from "src";
 
 program
   .name("")
   .action(async () => {
-    console.log();
-  })
+    const parsedInput = await parseInput("./input.txt")
+
+    console.log(parsedInput);
+  });
 
 program.parse();

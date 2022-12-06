@@ -4,7 +4,7 @@
     "allowJs": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
-    "target": "es6",
+    "target": "es2022",
     "esModuleInterop": true,
     "outDir": "build/",
     "baseUrl": ".",
